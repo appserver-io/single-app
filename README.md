@@ -13,7 +13,6 @@ This packages provides classes for a appserver.io version, that has been complet
 
 This does not mean, that any functionality is missing! Instead we've tried to optimize and simplify the handling for the development process which should make developers life pretty much easier. To covered that we decided to provide a nodejs like approach.
 
-
 ## Issues
 
 # External Links

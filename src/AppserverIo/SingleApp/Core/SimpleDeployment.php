@@ -35,6 +35,19 @@ class SimpleDeployment extends GenericDeployment
 {
 
     /**
+     * Returns the deployment service instance.
+     *
+     * @return \AppserverIo\Appserver\Core\Api\DeploymentService The deployment service instance
+     */
+    public function getDeploymentService()
+    {
+        if ($this->deploymentService == null) {
+            $this->deploymentService = $this->newService('AppserverIo\SingleApp\Core\Api\SimpleDeploymentService');
+        }
+        return $this->deploymentService;
+    }
+
+    /**
      * Return's the container's directory with applications to be deployed.
      *
      * @return string The container's application base directory
@@ -51,6 +64,6 @@ class SimpleDeployment extends GenericDeployment
      */
     protected function loadContextInstances()
     {
-        return this->getDeploymentService()->loadContextInstancesByWorkingDir($this->getContainer());
+        return $this->getDeploymentService()->loadContextInstancesByWorkingDir($this->getContainer());
     }
 }
