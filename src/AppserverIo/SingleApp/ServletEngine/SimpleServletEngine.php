@@ -60,7 +60,7 @@ class SimpleServletEngine extends ServletEngine
                 'Can\'t find application for URL %s%s',
                 $requestContext->getServerVar(ServerVars::HTTP_HOST),
                 $requestContext->getServerVar(ServerVars::X_REQUEST_URI)
-                ),
+            ),
             404
         );
     }
