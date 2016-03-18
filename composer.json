@@ -1,51 +1,39 @@
 {
-	"name" : "appserver-io/server",
-	"description" : "Multithreaded server daemon framework",
-	"homepage" : "https://github.com/appserver-io/server",
+	"name" : "appserver-io/single-app",
+	"description" : "Stripped down appserver.io version providing a nodejs like handling",
+	"homepage" : "https://github.com/appserver-io/single-app",
 	"license" : "OSL-3.0",
 	"keywords" : [
 		"php",
 		"server",
-		"socket",
+		"appserver",
 		"framework",
 		"multithreading"
 	],
 	"authors" : [{
-			"name" : "Johann Zelger",
-			"email" : "jz@appserver.io",
-			"homepage" : "http://www.appserver.io",
-			"role" : "Developer"
-		}, {
 			"name" : "Tim Wagner",
 			"email" : "tw@appserver.io",
 			"homepage" : "http://www.appserver.io",
 			"role" : "Developer"
-		}, {
-            "name" : "Bernhard Wick",
-            "email" : "bw@appserver.io",
-            "homepage" : "http://www.appserver.io",
-            "role" : "Developer"
-        }
+		}
 	],
 	"require" : {
-		"php" : ">=5.4.0",
-        "appserver-io/logger" : "~1.0",
-        "appserver-io-psr/socket" : "~1.0"
+		"php" : ">=5.4.0"
 	},
 	"require-dev" : {
-		"appserver-io/build" : "~1.0"
+		"appserver-io/build" : "~1.0",
+		"appserver-io/appserver" : "~1.0"
 	},
 	"autoload" : {
 		"psr-0" : {
-			"AppserverIo\\Server" : [
-				"src/",
-				"tests/"
+			"AppserverIo\\SingleApp" : [
+				"src/"
 			]
 		}
 	},
 	"support" : {
-		"email" : "jz@appserver.io",
+		"email" : "tw@appserver.io",
 		"issues" : "https://github.com/appserver-io/appserver/issues",
-		"source" : "https://github.com/appserver-io/server"
+		"source" : "https://github.com/appserver-io/single-app"
 	}
 }
