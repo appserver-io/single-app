@@ -26,9 +26,7 @@
 	},
 	"autoload" : {
 		"psr-0" : {
-			"AppserverIo\\SingleApp" : [
-				"src/"
-			]
+			"AppserverIo\\SingleApp" : "src/"
 		}
 	},
 	"support" : {
