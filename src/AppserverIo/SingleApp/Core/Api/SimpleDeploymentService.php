@@ -100,7 +100,7 @@ class SimpleDeploymentService extends DeploymentService
         $contextInstances = array();
 
         // attach the context to the context instances
-        $context = $this->loadContextInstance($container, getcwd());
+        $context = $this->loadContextInstance($container->getContainerNode(), getcwd());
         $contextInstances[$context->getName()] = $context;
 
         // return the array with the context instances
