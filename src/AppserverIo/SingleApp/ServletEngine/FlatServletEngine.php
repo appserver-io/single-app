@@ -45,7 +45,7 @@ use AppserverIo\Appserver\ServletEngine\Security\AuthenticationManagerInterface;
  * @link      https://github.com/appserver-io/single-app
  * @link      http://www.appserver.io
  */
-class SimpleServletEngine extends ServletEngine
+class FlatServletEngine extends ServletEngine
 {
 
     /**

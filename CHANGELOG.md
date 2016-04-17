@@ -1,3 +1,13 @@
+# Version 2.0.2
+
+## Bugfixes
+
+* Fixed invalid class name for FlatServletEngine
+
+## Features
+
+* None
+
 # Version 2.0.1
 
 ## Bugfixes
