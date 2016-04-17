@@ -34,7 +34,7 @@ use AppserverIo\Appserver\ServletEngine\ServletEngine;
 use AppserverIo\Appserver\ServletEngine\RequestHandler;
 use AppserverIo\Appserver\ServletEngine\BadRequestException;
 use AppserverIo\Appserver\ServletEngine\SessionManagerInterface;
-use AppserverIo\Appserver\ServletEngine\Security\AuthenticationManagerInterface;
+use AppserverIo\Appserver\ServletEngine\Authentication\AuthenticationManagerInterface;
 
 /**
  * A servlet engine implementation to handle a single app container.
@@ -45,7 +45,7 @@ use AppserverIo\Appserver\ServletEngine\Security\AuthenticationManagerInterface;
  * @link      https://github.com/appserver-io/single-app
  * @link      http://www.appserver.io
  */
-class SimpleServletEngine extends ServletEngine
+class FlatServletEngine extends ServletEngine
 {
 
     /**
