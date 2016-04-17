@@ -34,7 +34,7 @@ use AppserverIo\Appserver\ServletEngine\ServletEngine;
 use AppserverIo\Appserver\ServletEngine\RequestHandler;
 use AppserverIo\Appserver\ServletEngine\BadRequestException;
 use AppserverIo\Appserver\ServletEngine\SessionManagerInterface;
-use AppserverIo\Appserver\ServletEngine\Authentication\AuthenticationManagerInterface;
+use AppserverIo\Appserver\ServletEngine\Security\AuthenticationManagerInterface;
 
 /**
  * A servlet engine implementation to handle a single app container.
