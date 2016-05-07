@@ -46,7 +46,7 @@ class SimpleServletEngine extends ServletEngine
      * @return null|\AppserverIo\Psr\Application\ApplicationInterface
      * @throws \AppserverIo\Appserver\ServletEngine\BadRequestException Is thrown if no application is available
      */
-    protected function findRequestedApplication(RequestContextInterface $requestContext)
+    public function findRequestedApplication(RequestContextInterface $requestContext)
     {
 
         // return the first application (we only have one)
